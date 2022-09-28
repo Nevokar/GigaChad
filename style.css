@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+nav {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background: rgb(0,166,135);
+    background: linear-gradient(90deg, rgba(0,166,135,1) 0%, rgba(48,170,0,1) 100%);
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-align {
+    width: 1580px;
+}
+
+.logo {
+    float: left;
+    color: white;
+}
+
+.logo div:nth-child(1) {
+    font-size: 25px;
+}
+
+.logo div:nth-child(2) {
+    font-weight: bold;
+    letter-spacing: 0.45px;
+}
+
+body > nav > div > div.logo > div:nth-child(2) > span > img {
+    height: 16px;
+    filter: grayscale(1);
+}
+
+.navigation {
+    float: right;
+    color: white;
+    max-width: 50%;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+nav ul li a:hover {
+    border-bottom: 5px white solid;
+    padding-bottom: 35px;
+    border-color: white;
+}
+
+/* MAIN  */
+
+main {
+    min-height: 200px;
+    width: 100%;
+}
+
+.main-1 {
+    display: flex;
+    min-height: 980px;
+    width: 100%;
+    background: #e6b846;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+}
+
+.main-1 div {
+    width: 1500px;
+}
+
+.main-1 div h1{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.main-1 div p {
+    line-height: 40pt;
+    font-size: 25px;
+    max-width: 1000px;
+}
+
+.main-1 button {
+    font-size: 22px;
+    padding: 15px;
+    background: transparent;
+    border: 2px white solid;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-1 button:hover {
+    background: white;
+    color: #e6b846;
+}
+
+/* 2ND MAIN */
+    
+
+.main-2 {
+    flex-wrap: wrap;
+    display: flex;
+    min-height: 1080px;
+    width: 100%;
+    background: #e6e7e8;
+    color: #333132;
+    justify-content: center; 
+}
+
+body > main > section.main-2 > div {
+    width: 1500px;
+}
+
+
+.main-2 div h1 {
+    margin: 0;
+    padding: 150px 0 0 0;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.main-2 div p {
+    line-height: 40pt;
+    font-size: 25px;
+    max-width: 1000px;
+}
+
+.articles {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles article {
+    background: white;
+    height: 270px;
+    width: 460px;
+    transition: .5s;
+}
+
+.articles article:nth-child(1) {
+    background: url(imgs/kunkka.jpg) center;
+    position: relative;
+    background-size: 150%;
+}
+
+.articles article:nth-child(2) {
+    background: url(imgs/doom.jpg) center;
+    position: relative;
+    background-size: 130%;
+}
+
+.articles article:nth-child(3) {
+    background: url(imgs/visage.jpg) center;
+    position: relative;
+    background-size: 150%;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.articles button {
+    font-size: 15px;
+    padding: 10px;
+    background: transparent;
+    border: 2px white solid;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.articles button:hover {
+    background: white;
+    color: #333132;
+}
+
+.enroll-articles {
+    display: flex;
+}
+
+.enroll-articles h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 200px;
+}
+
+.enroll-articles p {
+    margin: 0;
+    padding: 25px 60px 35px 0;
+}
+
+.enroll-articles button {
+    font-size: 22px;
+    padding: 15px 25px 15px 25px;
+    background: #16a98a;
+    border: 2px white solid;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 200px;
+}
+
+.enroll-articles button:hover {
+    color: #16a98a;
+    background: transparent;
+    border-color: #16a98a;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    width: 100%;
+    background: rgb(0,166,135);
+    background: linear-gradient(90deg, rgba(0,166,135,1) 0%, rgba(48,170,0,1) 100%);
+}
+
+footer a {
+    padding: 5px 50px 0 50px;
+    font-size: 80px;
+    font-weight: 900;
+    height: 130px;
+    color: white;
+    border: 4px solid white;
+    border-radius: 25px;
+    background: transparent;
+    transition: 0.5s;
+    cursor: wait;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:#16a98a;
+    background: white;
+}
